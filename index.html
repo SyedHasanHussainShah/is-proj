@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Neon Wallet DApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div id="animated-background"></div>
+    <div class="container">
+      <h1 class="glow">💸 CRYTO WALLET DAPP</h1>
+
+      <p id="status" class="status">Not connected</p>
+
+      <div class="btn-group">
+        <button onclick="toggleWallet()" id="walletButton" class="neon-btn">
+          🔌 Connect Wallet
+        </button>
+        <button onclick="withdrawFunds()" class="neon-btn">
+          ⬇️ With-Drawal 0.01 ETH to Owner
+        </button>
+        <br />
+      </div>
+      <div id="animated-background"></div>
+      <div class="send-funds-section">
+        <div class="send-form">
+          <h3 class="glow">🚀 Send ETH from Contract</h3>
+          <input
+            id="recipient"
+            placeholder="Recipient address"
+            class="neon-input"
+          />
+          <input id="amount" placeholder="Amount in ETH" class="neon-input" />
+          <br />
+          <div class="button-row">
+            <button onclick="handleSendFunds()" class="neon-btn">
+              📤 Send ETH
+            </button>
+            <button onclick="downloadTransactions()" class="neon-btn">🡇</button>
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
