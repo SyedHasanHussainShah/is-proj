@@ -1,5 +1,5 @@
 console.log("Hello, This is a Blockchain project");
-alert("💸 Welcome To Crypto Wallet DAPP");
+alert("💸 Welcome To CHAIN-VAULT DAPP");
 
 // Define the correct password
 const correctPassword = "1234"; // You can change this
